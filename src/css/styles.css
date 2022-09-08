@@ -1,0 +1,124 @@
+:root {
+    
+    --color-txt: white;
+    --color-hover-txt: #212b21;
+    --color-accent: #0bb150;
+    --color-hover: #b0f3ea;
+    --color-form: #0000ff;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', 'Open Sans', sans-serif;
+    background-color: #eeeeee;
+    color: var(--color-hover-txt);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.is-hidden {
+    visibility: hidden;
+}
+
+.search-form {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background: rgb(21, 14, 149);
+        
+}
+
+.btn-icon {
+    display: block;
+    font-size: 14px;
+    font-weight: bolder;
+    color: var(--color-hover-txt);
+}
+
+
+.input {
+    border: none;
+    padding: 10px;
+    width: 25%;
+    border-radius: 5px 0px 0px 5px;
+    line-height: 1.5;
+}
+.input:focus  {
+     outline: none;
+}
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.btn:hover {
+        cursor: pointer;
+
+        background: var(--color-hover);
+    }
+
+.load-more {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-accent);
+    font-weight: bolder;
+    color: var(--color-txt);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.load-more:hover {
+    color: var(--color-hover-txt);
+    background: var(--color-hover);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 240px;
+    grid-gap: 12px;
+    justify-content: center;
+    padding: 20px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-card {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+.info {
+    padding: 10px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
